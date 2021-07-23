@@ -1,0 +1,6 @@
+Reference, Value, Footprint, Datasheet
+"R1","0.0003","Resistor_SMD:R_1206_3216Metric","~"
+"F1","5","","~"
+"J2","Line_In","","~"
+"J1","Raspberry_Pi_2_3","","https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf"
+"U1","INA181","Package_TO_SOT_SMD:SOT-23-6","http://www.ti.com/lit/ds/symlink/ina181.pdf"
