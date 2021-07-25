@@ -1,4 +1,4 @@
-19971925649060250
+19973552835007250
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -83046,6 +83046,13 @@ CuK miniature slide switch, OS series, SPDT, right angle, http://www.ckswitches.
 switch SPDT
 0
 6
+4
+custom-footprints
+fuse-holder-3557-2
+
+
+0
+4
 4
 digikey-footprints
 3-SIP_Module_TM1000Q
