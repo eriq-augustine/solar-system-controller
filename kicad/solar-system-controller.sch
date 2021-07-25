@@ -39,23 +39,19 @@ $EndComp
 $Comp
 L Connector:Screw_Terminal_01x02 J2
 U 1 1 60F87626
-P 16350 3250
-F 0 "J2" H 16430 3242 50  0000 L CNN
-F 1 "Line_In" H 16430 3151 50  0000 L CNN
-F 2 "digikey-footprints:Term_Block_1x2_P5.08MM" H 16350 3250 50  0001 C CNN
-F 3 "https://www.we-online.de/katalog/datasheet/691137710002.pdf" H 16350 3250 50  0001 C CNN
-F 4 "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/691137710002/6644051" H 16350 3250 50  0001 C CNN "Part"
-	1    16350 3250
+P 16850 3250
+F 0 "J2" H 16930 3242 50  0000 L CNN
+F 1 "Line_In" H 16930 3151 50  0000 L CNN
+F 2 "digikey-footprints:Term_Block_1x2_P5.08MM" H 16850 3250 50  0001 C CNN
+F 3 "https://www.we-online.de/katalog/datasheet/691137710002.pdf" H 16850 3250 50  0001 C CNN
+F 4 "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/691137710002/6644051" H 16850 3250 50  0001 C CNN "Part"
+	1    16850 3250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	16100 3200 16100 3250
 Wire Wire Line
-	16100 3250 16150 3250
-Wire Wire Line
 	15950 3200 16100 3200
-Wire Wire Line
-	16150 3350 16100 3350
 Wire Wire Line
 	16100 3350 16100 3400
 Wire Wire Line
@@ -87,14 +83,14 @@ $EndComp
 $Comp
 L Amplifier_Current:INA181 U3
 U 1 1 60FA462E
-P 15800 4400
-F 0 "U3" H 15950 4550 50  0000 L CNN
-F 1 "1000 Gain" H 15950 4250 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-" H 15850 4450 50  0001 C CNN
-F 3 "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fina210" H 15950 4550 50  0001 C CNN
-F 4 "https://www.digikey.com/en/products/detail/texas-instruments/INA212BIDCKT/3675148" H 15800 4400 50  0001 C CNN "Part"
-F 5 "INA212BIDCKT" H 15800 4400 50  0001 C CNN "Number"
-	1    15800 4400
+P 15800 3950
+F 0 "U3" H 15950 4100 50  0000 L CNN
+F 1 "1000 Gain" H 15950 3800 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-" H 15850 4000 50  0001 C CNN
+F 3 "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fina210" H 15950 4100 50  0001 C CNN
+F 4 "https://www.digikey.com/en/products/detail/texas-instruments/INA212BIDCKT/3675148" H 15800 3950 50  0001 C CNN "Part"
+F 5 "INA212BIDCKT" H 15800 3950 50  0001 C CNN "Number"
+	1    15800 3950
 	0    1    1    0   
 $EndComp
 $Comp
@@ -110,17 +106,17 @@ F 4 "https://www.digikey.com/en/products/detail/microchip-technology/MCP3008-I-P
 	1    0    0    -1  
 $EndComp
 Text GLabel 2700 4350 3    50   Input ~ 0
-PI_GND
+BUS_NEG
 Text GLabel 2900 1750 1    50   Input ~ 0
-PI_5V
+BUS_PI_5V
 Text GLabel 3200 1750 1    50   Input ~ 0
 PI_3V3
-Text GLabel 15500 4300 0    50   Input ~ 0
+Text GLabel 15500 3850 0    50   Input ~ 0
 PI_GND
-Text GLabel 16100 4300 2    50   Input ~ 0
+Text GLabel 16100 3850 2    50   Input ~ 0
 PI_5V
 Wire Wire Line
-	15500 4300 15500 4500
+	15500 3850 15500 4050
 $Comp
 L Analog_ADC:MCP3008 U?
 U 1 1 60FB68B4
@@ -142,27 +138,25 @@ PI_3V3
 Wire Wire Line
 	8050 4950 8350 4950
 Text GLabel 7550 5150 0    50   Input ~ 0
-SHUNT_ADC_CH1
+SHUNT_ADC_CH0
 Text GLabel 7550 5250 0    50   Input ~ 0
-SHUNT_ADC_CH2
-Text GLabel 7550 5350 0    50   Input ~ 0
-SHUNT_ADC_CH3
-Text GLabel 7550 5450 0    50   Input ~ 0
-SHUNT_ADC_CH4
-Text GLabel 7550 5550 0    50   Input ~ 0
-SHUNT_ADC_CH5
-Text GLabel 7550 5650 0    50   Input ~ 0
-SHUNT_ADC_CH6
-Text GLabel 7550 5750 0    50   Input ~ 0
-SHUNT_ADC_CH7
-Text GLabel 7550 5850 0    50   Input ~ 0
-SHUNT_ADC_CH8
-Text GLabel 15800 4700 3    50   Input ~ 0
 SHUNT_ADC_CH1
+Text GLabel 7550 5350 0    50   Input ~ 0
+SHUNT_ADC_CH2
+Text GLabel 7550 5450 0    50   Input ~ 0
+SHUNT_ADC_CH3
+Text GLabel 7550 5550 0    50   Input ~ 0
+SHUNT_ADC_CH4
+Text GLabel 7550 5650 0    50   Input ~ 0
+SHUNT_ADC_CH5
+Text GLabel 7550 5750 0    50   Input ~ 0
+SHUNT_ADC_CH6
+Text GLabel 15800 4250 3    50   Input ~ 0
+SHUNT_ADC_CH0
 Wire Wire Line
-	15900 3550 15900 4100
+	15900 3550 15900 3650
 Wire Wire Line
-	15700 3550 15700 4100
+	15700 3550 15700 3650
 Text GLabel 14450 3400 0    50   Input ~ 0
 BUS+
 Wire Wire Line
@@ -248,16 +242,14 @@ RAIL_GND
 $Comp
 L Device:R R?
 U 1 1 60FE2F32
-P 14000 1350
-F 0 "R?" H 13930 1304 50  0000 R CNN
-F 1 "190" H 13930 1395 50  0000 R CNN
-F 2 "" V 13930 1350 50  0001 C CNN
-F 3 "~" H 14000 1350 50  0001 C CNN
-	1    14000 1350
-	-1   0    0    1   
+P 13750 1700
+F 0 "R?" V 13550 1750 50  0000 R CNN
+F 1 "105" V 13650 1800 50  0000 R CNN
+F 2 "" V 13680 1700 50  0001 C CNN
+F 3 "~" H 13750 1700 50  0001 C CNN
+	1    13750 1700
+	0    1    1    0   
 $EndComp
-Text GLabel 13850 1200 0    50   Input ~ 0
-LINE1_SWITCH_OUT
 Text GLabel 14000 2100 3    50   Input ~ 0
 PI_GND
 $Comp
@@ -272,10 +264,6 @@ F 4 "70mA @ 5V" V 15050 2900 50  0001 C CNN "Current"
 	1    15050 2900
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	13850 1200 14000 1200
-Wire Wire Line
-	14000 1500 14000 1700
 Wire Wire Line
 	14000 1900 14000 2100
 Wire Wire Line
@@ -314,14 +302,151 @@ Wire Wire Line
 $Comp
 L Switch:SW_SP3T SW?
 U 1 1 6103112B
-P 11600 3150
-F 0 "SW?" H 11600 3433 50  0000 C CNN
-F 1 "SP3T" H 11600 3342 50  0000 C CNN
-F 2 "custom-footprints:OS103011MS8QP1_SP3T" H 10975 3325 50  0001 C CNN
-F 3 "https://www.ckswitches.com/media/1428/os.pdf" H 10975 3325 50  0001 C CNN
-F 4 "100mA" H 11600 3150 50  0001 C CNN "Current"
-F 5 "https://www.digikey.com/en/products/detail/c-k/OS103011MS8QP1/1981414" H 11600 3150 50  0001 C CNN "Part"
-	1    11600 3150
+P 13250 1700
+F 0 "SW?" H 13250 1983 50  0000 C CNN
+F 1 "SP3T" H 13250 1892 50  0000 C CNN
+F 2 "custom-footprints:OS103011MS8QP1_SP3T" H 12625 1875 50  0001 C CNN
+F 3 "https://www.ckswitches.com/media/1428/os.pdf" H 12625 1875 50  0001 C CNN
+F 4 "100mA" H 13250 1700 50  0001 C CNN "Current"
+F 5 "https://www.digikey.com/en/products/detail/c-k/OS103011MS8QP1/1981414" H 13250 1700 50  0001 C CNN "Part"
+	1    13250 1700
+	-1   0    0    -1  
+$EndComp
+Text GLabel 12900 1600 0    50   Input ~ 0
+BUS_SIGNAL_3V3
+Text GLabel 7900 1100 2    50   Input ~ 0
+BUS_PI_5V
+Text GLabel 7900 2100 2    50   Input ~ 0
+BUS_UTIL_5V
+Text GLabel 12900 1800 0    50   Input ~ 0
+PI_LINE1_SWITCH
+Text GLabel 5050 2150 0    50   Input ~ 0
+PI_LINE1_SWITCH
+Wire Wire Line
+	12900 1600 13050 1600
+Wire Wire Line
+	12900 1800 13050 1800
+NoConn ~ 13050 1700
+Wire Wire Line
+	13450 1700 13600 1700
+Wire Wire Line
+	13900 1700 14000 1700
+Text GLabel 16550 3500 3    50   Input ~ 0
+DIFF_ADC_PAIR1_HIGH
+$Comp
+L Analog_ADC:MCP3008 U?
+U 1 1 60FDB10D
+P 11450 5400
+F 0 "U?" H 11100 6000 50  0000 C CNN
+F 1 "DIFF_ADC" H 11100 5900 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 11550 5500 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21295d.pdf" H 11550 5500 50  0001 C CNN
+F 4 "https://www.digikey.com/en/products/detail/microchip-technology/MCP3008-I-P/319422" H 11450 5400 50  0001 C CNN "Part"
+	1    11450 5400
 	1    0    0    -1  
 $EndComp
+Text GLabel 11350 4900 1    50   Input ~ 0
+PI_3V3
+Wire Wire Line
+	11650 4900 11350 4900
+Wire Wire Line
+	11650 6000 11350 6000
+Text GLabel 11350 6000 3    50   Input ~ 0
+PI_GND
+Text GLabel 10850 5100 0    50   Input ~ 0
+DIFF_ADC_PAIR1_HIGH
+Text GLabel 10850 5200 0    50   Input ~ 0
+DIFF_ADC_PAIR1_LOW
+Text GLabel 10850 5300 0    50   Input ~ 0
+DIFF_ADC_PAIR2_HIGH
+Text GLabel 10850 5400 0    50   Input ~ 0
+DIFF_ADC_PAIR2_LOW
+Text GLabel 10850 5500 0    50   Input ~ 0
+DIFF_ADC_PAIR3_HIGH
+Text GLabel 10850 5600 0    50   Input ~ 0
+DIFF_ADC_PAIR3_LOW
+Text GLabel 10850 5700 0    50   Input ~ 0
+DIFF_ADC_PAIR4_HIGH
+Text GLabel 10850 5800 0    50   Input ~ 0
+DIFF_ADC_PAIR4_LOW
+Text GLabel 16550 3100 1    50   Input ~ 0
+DIFF_ADC_PAIR1_LOW
+Wire Wire Line
+	16100 3350 16550 3350
+Wire Wire Line
+	16100 3250 16550 3250
+Wire Wire Line
+	16550 3500 16550 3350
+Connection ~ 16550 3350
+Wire Wire Line
+	16550 3350 16650 3350
+Wire Wire Line
+	16550 3100 16550 3250
+Connection ~ 16550 3250
+Wire Wire Line
+	16550 3250 16650 3250
+$Comp
+L Converter_DCDC:OKI-78SR-5_1.5-W36-C U?
+U 1 1 6100527D
+P 7600 1100
+F 0 "U?" H 7600 1342 50  0000 C CNN
+F 1 "DC-DC-5V" H 7600 1251 50  0000 C CNN
+F 2 "Converter_DCDC:Converter_DCDC_muRata_OKI-78SR_Vertical" H 7650 850 50  0001 L CIN
+F 3 "https://power.murata.com/data/power/oki-78sr.pdf" H 7600 1100 50  0001 C CNN
+F 4 "https://www.digikey.com/en/products/detail/murata-power-solutions-inc/OKI-78SR-5-1-5-W36-C/2259781" H 7600 1100 50  0001 C CNN "Part"
+F 5 "1.2" H 7600 1100 50  0001 C CNN "Current"
+	1    7600 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Converter_DCDC:OKI-78SR-5_1.5-W36-C U?
+U 1 1 610063BE
+P 7600 2100
+F 0 "U?" H 7600 2342 50  0000 C CNN
+F 1 "DC-DC-5V" H 7600 2251 50  0000 C CNN
+F 2 "Converter_DCDC:Converter_DCDC_muRata_OKI-78SR_Vertical" H 7650 1850 50  0001 L CIN
+F 3 "https://power.murata.com/data/power/oki-78sr.pdf" H 7600 2100 50  0001 C CNN
+F 4 "https://www.digikey.com/en/products/detail/murata-power-solutions-inc/OKI-78SR-5-1-5-W36-C/2259781" H 7600 2100 50  0001 C CNN "Part"
+F 5 "1.2" H 7600 2100 50  0001 C CNN "Current"
+	1    7600 2100
+	1    0    0    -1  
+$EndComp
+Text GLabel 7300 1100 0    50   Input ~ 0
+BUS_POS
+Text GLabel 7600 1400 3    50   Input ~ 0
+BUS_NEG
+Text GLabel 7300 2100 0    50   Input ~ 0
+BUS_POS
+Text GLabel 7600 2400 3    50   Input ~ 0
+BUS_NEG
+NoConn ~ 15350 3000
+Text GLabel 3900 3550 2    50   Input ~ 0
+PI_SCLK
+Text GLabel 8750 5350 2    50   Input ~ 0
+PI_SCLK
+Text GLabel 3900 3350 2    50   Input ~ 0
+PI_MISO
+Text GLabel 8750 5450 2    50   Input ~ 0
+PI_MISO
+Text GLabel 3900 3450 2    50   Input ~ 0
+PI_MOSI
+Text GLabel 8750 5550 2    50   Input ~ 0
+PI_MOSI
+Text GLabel 3900 3250 2    50   Input ~ 0
+PI_CE0
+Text GLabel 3900 3150 2    50   Input ~ 0
+PI_CE1
+Text GLabel 8750 5650 2    50   Input ~ 0
+PI_CE0
+NoConn ~ 7550 5850
+Text GLabel 12050 5300 2    50   Input ~ 0
+PI_SCLK
+Text GLabel 12050 5400 2    50   Input ~ 0
+PI_MISO
+Text GLabel 12050 5500 2    50   Input ~ 0
+PI_MOSI
+Text GLabel 12050 5600 2    50   Input ~ 0
+PI_CE1
+Text GLabel 2300 3750 0    50   Input ~ 0
+PI_CE3
 $EndSCHEMATC
