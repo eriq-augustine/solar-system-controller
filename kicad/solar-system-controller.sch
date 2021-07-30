@@ -120,36 +120,36 @@ Wire Wire Line
 $Comp
 L Analog_ADC:MCP3008 U?
 U 1 1 60FB68B4
-P 8150 5450
-F 0 "U?" H 7750 6050 50  0000 C CNN
-F 1 "SHUNT_ADC" H 7750 5950 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm" H 8250 5550 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21295d.pdf" H 8250 5550 50  0001 C CNN
-F 4 "https://www.digikey.com/en/products/detail/microchip-technology/MCP3008-I-P/319422" H 8150 5450 50  0001 C CNN "Part"
-	1    8150 5450
+P 12550 11700
+F 0 "U?" H 12150 12300 50  0000 C CNN
+F 1 "SHUNT_ADC" H 12150 12200 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 12650 11800 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21295d.pdf" H 12650 11800 50  0001 C CNN
+F 4 "https://www.digikey.com/en/products/detail/microchip-technology/MCP3008-I-P/319422" H 12550 11700 50  0001 C CNN "Part"
+	1    12550 11700
 	1    0    0    -1  
 $EndComp
-Text GLabel 8050 6050 3    50   Input ~ 0
+Text GLabel 12450 12300 3    50   Input ~ 0
 PI_GND
 Wire Wire Line
-	8050 6050 8350 6050
-Text GLabel 8050 4950 1    50   Input ~ 0
+	12450 12300 12750 12300
+Text GLabel 12450 11200 1    50   Input ~ 0
 PI_3V3
 Wire Wire Line
-	8050 4950 8350 4950
-Text GLabel 7550 5150 0    50   Input ~ 0
+	12450 11200 12750 11200
+Text GLabel 11950 11400 0    50   Input ~ 0
 SHUNT_ADC_CH0
-Text GLabel 7550 5250 0    50   Input ~ 0
+Text GLabel 11950 11500 0    50   Input ~ 0
 SHUNT_ADC_CH1
-Text GLabel 7550 5350 0    50   Input ~ 0
+Text GLabel 11950 11600 0    50   Input ~ 0
 SHUNT_ADC_CH2
-Text GLabel 7550 5450 0    50   Input ~ 0
+Text GLabel 11950 11700 0    50   Input ~ 0
 SHUNT_ADC_CH3
-Text GLabel 7550 5550 0    50   Input ~ 0
+Text GLabel 11950 11800 0    50   Input ~ 0
 SHUNT_ADC_CH4
-Text GLabel 7550 5650 0    50   Input ~ 0
+Text GLabel 11950 11900 0    50   Input ~ 0
 SHUNT_ADC_CH5
-Text GLabel 7550 5750 0    50   Input ~ 0
+Text GLabel 11950 12000 0    50   Input ~ 0
 SHUNT_ADC_CH6
 Text GLabel 15800 4250 3    50   Input ~ 0
 SHUNT_ADC_CH0
@@ -336,39 +336,39 @@ DIFF_ADC_PAIR1_HIGH
 $Comp
 L Analog_ADC:MCP3008 U?
 U 1 1 60FDB10D
-P 11450 5400
-F 0 "U?" H 11100 6000 50  0000 C CNN
-F 1 "DIFF_ADC" H 11100 5900 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm" H 11550 5500 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21295d.pdf" H 11550 5500 50  0001 C CNN
-F 4 "https://www.digikey.com/en/products/detail/microchip-technology/MCP3008-I-P/319422" H 11450 5400 50  0001 C CNN "Part"
-	1    11450 5400
+P 12550 9800
+F 0 "U?" H 12200 10400 50  0000 C CNN
+F 1 "DIFF_ADC" H 12200 10300 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 12650 9900 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21295d.pdf" H 12650 9900 50  0001 C CNN
+F 4 "https://www.digikey.com/en/products/detail/microchip-technology/MCP3008-I-P/319422" H 12550 9800 50  0001 C CNN "Part"
+	1    12550 9800
 	1    0    0    -1  
 $EndComp
-Text GLabel 11350 4900 1    50   Input ~ 0
+Text GLabel 12450 9300 1    50   Input ~ 0
 PI_3V3
 Wire Wire Line
-	11650 4900 11350 4900
+	12750 9300 12450 9300
 Wire Wire Line
-	11650 6000 11350 6000
-Text GLabel 11350 6000 3    50   Input ~ 0
+	12750 10400 12450 10400
+Text GLabel 12450 10400 3    50   Input ~ 0
 PI_GND
-Text GLabel 10850 5100 0    50   Input ~ 0
-DIFF_ADC_PAIR1_HIGH
-Text GLabel 10850 5200 0    50   Input ~ 0
-DIFF_ADC_PAIR1_LOW
-Text GLabel 10850 5300 0    50   Input ~ 0
-DIFF_ADC_PAIR2_HIGH
-Text GLabel 10850 5400 0    50   Input ~ 0
-DIFF_ADC_PAIR2_LOW
-Text GLabel 10850 5500 0    50   Input ~ 0
-DIFF_ADC_PAIR3_HIGH
-Text GLabel 10850 5600 0    50   Input ~ 0
-DIFF_ADC_PAIR3_LOW
-Text GLabel 10850 5700 0    50   Input ~ 0
-DIFF_ADC_PAIR4_HIGH
-Text GLabel 10850 5800 0    50   Input ~ 0
-DIFF_ADC_PAIR4_LOW
+Text GLabel 11950 9500 0    50   Input ~ 0
+DIFF_ADC_PAIR5_HIGH
+Text GLabel 11950 9600 0    50   Input ~ 0
+DIFF_ADC_PAIR5_LOW
+Text GLabel 11950 9700 0    50   Input ~ 0
+DIFF_ADC_PAIR6_HIGH
+Text GLabel 11950 9800 0    50   Input ~ 0
+DIFF_ADC_PAIR6_LOW
+Text GLabel 11950 9900 0    50   Input ~ 0
+DIFF_ADC_PAIR7_HIGH
+Text GLabel 11950 10000 0    50   Input ~ 0
+DIFF_ADC_PAIR7_LOW
+Text GLabel 11950 10100 0    50   Input ~ 0
+DIFF_ADC_PAIR8_HIGH
+Text GLabel 11950 10200 0    50   Input ~ 0
+DIFF_ADC_PAIR8_LOW
 Text GLabel 16550 3100 1    50   Input ~ 0
 DIFF_ADC_PAIR1_LOW
 Wire Wire Line
@@ -422,31 +422,129 @@ BUS_NEG
 NoConn ~ 15350 3000
 Text GLabel 3900 3550 2    50   Input ~ 0
 PI_SCLK
-Text GLabel 8750 5350 2    50   Input ~ 0
+Text GLabel 13150 11600 2    50   Input ~ 0
 PI_SCLK
 Text GLabel 3900 3350 2    50   Input ~ 0
 PI_MISO
-Text GLabel 8750 5450 2    50   Input ~ 0
-PI_MISO
+Text GLabel 13150 11700 2    50   Input ~ 0
+SHUNT_ADC_OUT
 Text GLabel 3900 3450 2    50   Input ~ 0
 PI_MOSI
-Text GLabel 8750 5550 2    50   Input ~ 0
+Text GLabel 13150 11800 2    50   Input ~ 0
 PI_MOSI
 Text GLabel 3900 3250 2    50   Input ~ 0
 PI_CE0
 Text GLabel 3900 3150 2    50   Input ~ 0
 PI_CE1
-Text GLabel 8750 5650 2    50   Input ~ 0
+Text GLabel 13150 11900 2    50   Input ~ 0
 PI_CE0
-NoConn ~ 7550 5850
-Text GLabel 12050 5300 2    50   Input ~ 0
+NoConn ~ 11950 12100
+Text GLabel 13150 9700 2    50   Input ~ 0
 PI_SCLK
-Text GLabel 12050 5400 2    50   Input ~ 0
-PI_MISO
-Text GLabel 12050 5500 2    50   Input ~ 0
+Text GLabel 13150 9800 2    50   Input ~ 0
+DIFF_ADC_OUT2
+Text GLabel 13150 9900 2    50   Input ~ 0
 PI_MOSI
-Text GLabel 12050 5600 2    50   Input ~ 0
+Text GLabel 13150 10000 2    50   Input ~ 0
 PI_CE1
 Text GLabel 2300 3750 0    50   Input ~ 0
 PI_CE3
+$Comp
+L Analog_ADC:MCP3008 U?
+U 1 1 61057BC9
+P 12550 7950
+F 0 "U?" H 12200 8550 50  0000 C CNN
+F 1 "DIFF_ADC" H 12200 8450 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 12650 8050 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21295d.pdf" H 12650 8050 50  0001 C CNN
+F 4 "https://www.digikey.com/en/products/detail/microchip-technology/MCP3008-I-P/319422" H 12550 7950 50  0001 C CNN "Part"
+	1    12550 7950
+	1    0    0    -1  
+$EndComp
+Text GLabel 12450 7450 1    50   Input ~ 0
+PI_3V3
+Wire Wire Line
+	12750 7450 12450 7450
+Wire Wire Line
+	12750 8550 12450 8550
+Text GLabel 12450 8550 3    50   Input ~ 0
+PI_GND
+Text GLabel 11950 7650 0    50   Input ~ 0
+DIFF_ADC_PAIR1_HIGH
+Text GLabel 11950 7750 0    50   Input ~ 0
+DIFF_ADC_PAIR1_LOW
+Text GLabel 11950 7850 0    50   Input ~ 0
+DIFF_ADC_PAIR2_HIGH
+Text GLabel 11950 7950 0    50   Input ~ 0
+DIFF_ADC_PAIR2_LOW
+Text GLabel 11950 8050 0    50   Input ~ 0
+DIFF_ADC_PAIR3_HIGH
+Text GLabel 11950 8150 0    50   Input ~ 0
+DIFF_ADC_PAIR3_LOW
+Text GLabel 11950 8250 0    50   Input ~ 0
+DIFF_ADC_PAIR4_HIGH
+Text GLabel 11950 8350 0    50   Input ~ 0
+DIFF_ADC_PAIR4_LOW
+Text GLabel 13150 7850 2    50   Input ~ 0
+PI_SCLK
+Text GLabel 13150 7950 2    50   Input ~ 0
+DIFF_ADC_OUT1
+Text GLabel 13150 8050 2    50   Input ~ 0
+PI_MOSI
+Text GLabel 13150 8150 2    50   Input ~ 0
+PI_CE1
+$Comp
+L dk_Interface-Analog-Switches-Multiplexers-Demultiplexers:CD74HC4051E U?
+U 1 1 61078403
+P 8850 9550
+F 0 "U?" H 8600 10300 60  0000 C CNN
+F 1 "ADC_MUX" H 8600 10150 60  0000 C CNN
+F 2 "digikey-footprints:DIP-16_W7.62mm" H 9050 9750 60  0001 L CNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fcd74hc4051" H 9050 9850 60  0001 L CNN
+F 4 "296-12810-5-ND" H 9050 9950 60  0001 L CNN "Digi-Key_PN"
+F 5 "CD74HC4051E" H 9050 10050 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 9050 10150 60  0001 L CNN "Category"
+F 7 "Interface - Analog Switches, Multiplexers, Demultiplexers" H 9050 10250 60  0001 L CNN "Family"
+F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fcd74hc4051" H 9050 10350 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/texas-instruments/CD74HC4051E/296-12810-5-ND/475938" H 9050 10450 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC MUX/DEMUX 8X1 16DIP" H 9050 10550 60  0001 L CNN "Description"
+F 11 "Texas Instruments" H 9050 10650 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 9050 10750 60  0001 L CNN "Status"
+F 13 "http://digikey.com/en/products/detail/texas-instruments/CD74HC4051E/475938?s=N4IgTCBcDaIMIBEDsAWAEnFAGArARgFEQBdAXyA" H 8850 9550 50  0001 C CNN "Part"
+	1    8850 9550
+	1    0    0    -1  
+$EndComp
+Text GLabel 8950 8850 1    50   Input ~ 0
+PI_3V3
+Text GLabel 8950 10250 3    50   Input ~ 0
+PI_GND
+Wire Wire Line
+	8950 10250 9050 10250
+NoConn ~ 9450 9350
+NoConn ~ 8250 9150
+NoConn ~ 8250 9250
+NoConn ~ 8250 9450
+NoConn ~ 8250 9550
+Text GLabel 8250 9350 0    50   Input ~ 0
+PI_MISO
+Text GLabel 9450 9550 2    50   Input ~ 0
+DIFF_ADC_OUT1
+Text GLabel 9450 9650 2    50   Input ~ 0
+DIFF_ADC_OUT2
+Text GLabel 9450 9450 2    50   Input ~ 0
+SHUNT_ADC_OUT
+Text GLabel 8250 9650 0    50   Input ~ 0
+PI_GND
+Text GLabel 8250 9850 0    50   Input ~ 0
+ADC_MUX_S1
+Text GLabel 8250 9950 0    50   Input ~ 0
+ADC_MUX_S0
+Text GLabel 8250 9750 0    50   Input ~ 0
+ADC_MUX_S2
+Text GLabel 3900 2950 2    50   Input ~ 0
+ADC_MUX_S2
+Text GLabel 3900 2850 2    50   Input ~ 0
+ADC_MUX_S1
+Text GLabel 3900 2750 2    50   Input ~ 0
+ADC_MUX_S0
 $EndSCHEMATC
