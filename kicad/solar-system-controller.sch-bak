@@ -533,4 +533,132 @@ Text GLabel 9450 9650 2    50   Input ~ 0
 DIFF_ADC_OUT2
 Text GLabel 9450 9450 2    50   Input ~ 0
 SHUNT_ADC_OUT
+Text GLabel 8250 9650 0    50   Input ~ 0
+PI_GND
+Text GLabel 8250 9850 0    50   Input ~ 0
+ADC_MUX_S1
+Text GLabel 8250 9950 0    50   Input ~ 0
+ADC_MUX_S0
+Text GLabel 8250 9750 0    50   Input ~ 0
+ADC_MUX_S2
+Text GLabel 3900 2950 2    50   Input ~ 0
+ADC_MUX_S2
+Text GLabel 3900 2850 2    50   Input ~ 0
+ADC_MUX_S1
+Text GLabel 3900 2750 2    50   Input ~ 0
+ADC_MUX_S0
+$Comp
+L Device:R R?
+U 1 1 610A6933
+P 2850 9350
+F 0 "R?" V 2643 9350 50  0000 C CNN
+F 1 "34K" V 2734 9350 50  0000 C CNN
+F 2 "" V 2780 9350 50  0001 C CNN
+F 3 "~" H 2850 9350 50  0001 C CNN
+	1    2850 9350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 610A933F
+P 4750 9750
+F 0 "C?" H 4865 9796 50  0000 L CNN
+F 1 "2000uF" H 4865 9705 50  0000 L CNN
+F 2 "" H 4788 9600 50  0001 C CNN
+F 3 "~" H 4750 9750 50  0001 C CNN
+	1    4750 9750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:LTV-817 U?
+U 1 1 610B2372
+P 6200 9750
+F 0 "U?" H 6200 9433 50  0000 C CNN
+F 1 "OPTO" H 6200 9524 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 6000 9550 50  0001 L CIN
+F 3 "http://www.us.liteon.com/downloads/LTV-817-827-847.PDF" H 6200 9650 50  0001 L CNN
+F 4 "https://www.digikey.com/en/products/detail/lite-on-inc/LTV-817/385836" H 6200 9750 50  0001 C CNN "Part"
+	1    6200 9750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 610B8D2B
+P 2100 9450
+F 0 "J?" H 2180 9442 50  0000 L CNN
+F 1 "Line_In" H 2180 9351 50  0000 L CNN
+F 2 "digikey-footprints:Term_Block_1x2_P5.08MM" H 2100 9450 50  0001 C CNN
+F 3 "https://www.we-online.de/katalog/datasheet/691137710002.pdf" H 2100 9450 50  0001 C CNN
+F 4 "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/691137710002/6644051" H 2100 9450 50  0001 C CNN "Part"
+	1    2100 9450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 9350 3550 9350
+Wire Wire Line
+	2300 9450 2700 9450
+Wire Wire Line
+	2700 9450 2700 9350
+Wire Wire Line
+	3550 10150 2300 10150
+Wire Wire Line
+	2300 10150 2300 9550
+Wire Wire Line
+	3950 9750 3950 9600
+Wire Wire Line
+	3950 9600 4750 9600
+Connection ~ 4750 9600
+Wire Wire Line
+	5900 9600 5900 9650
+Wire Wire Line
+	5900 9900 5900 9850
+$Comp
+L Device:R R?
+U 1 1 610D4318
+P 5300 9750
+F 0 "R?" H 5230 9704 50  0000 R CNN
+F 1 "60K" H 5230 9795 50  0000 R CNN
+F 2 "" V 5230 9750 50  0001 C CNN
+F 3 "~" H 5300 9750 50  0001 C CNN
+	1    5300 9750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4750 9600 5300 9600
+Wire Wire Line
+	4750 9900 5300 9900
+Connection ~ 5300 9600
+Wire Wire Line
+	5300 9600 5900 9600
+Connection ~ 5300 9900
+Wire Wire Line
+	5300 9900 5900 9900
+$Comp
+L dk_Diodes-Bridge-Rectifiers:DF04M D?
+U 1 1 610A84D4
+P 3550 9750
+F 0 "D?" H 3750 10200 60  0000 L CNN
+F 1 "240V" H 3700 10100 60  0000 L CNN
+F 2 "digikey-footprints:DIP-4_W7.62mm" H 3750 9950 60  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/DF10M-D.pdf" H 3750 10050 60  0001 L CNN
+F 4 "DF04M-ND" H 3750 10150 60  0001 L CNN "Digi-Key_PN"
+F 5 "DF04M" H 3750 10250 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 3750 10350 60  0001 L CNN "Category"
+F 7 "Diodes - Bridge Rectifiers" H 3750 10450 60  0001 L CNN "Family"
+F 8 "https://www.onsemi.com/pub/Collateral/DF10M-D.pdf" H 3750 10550 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/DF04M/DF04M-ND/965265" H 3750 10650 60  0001 L CNN "DK_Detail_Page"
+F 10 "BRIDGE RECT 1P 400V 1.5A 4DIP" H 3750 10750 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 3750 10850 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 3750 10950 60  0001 L CNN "Status"
+F 13 "https://www.digikey.com/en/products/detail/on-semiconductor/DF04M/965265" H 3550 9750 50  0001 C CNN "Part"
+	1    3550 9750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 10250 4750 10250
+Wire Wire Line
+	4750 10250 4750 9900
+Wire Wire Line
+	3150 9750 3150 10250
+Connection ~ 4750 9900
 $EndSCHEMATC

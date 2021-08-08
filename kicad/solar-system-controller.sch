@@ -520,7 +520,6 @@ Text GLabel 8950 10250 3    50   Input ~ 0
 PI_GND
 Wire Wire Line
 	8950 10250 9050 10250
-NoConn ~ 9450 9350
 NoConn ~ 8250 9150
 NoConn ~ 8250 9250
 NoConn ~ 8250 9450
@@ -547,4 +546,202 @@ Text GLabel 3900 2850 2    50   Input ~ 0
 ADC_MUX_S1
 Text GLabel 3900 2750 2    50   Input ~ 0
 ADC_MUX_S0
+$Comp
+L Analog_ADC:MCP3008 U?
+U 1 1 61134328
+P 12550 13550
+F 0 "U?" H 12150 14150 50  0000 C CNN
+F 1 "MISC_ADC" H 12150 14050 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 12650 13650 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21295d.pdf" H 12650 13650 50  0001 C CNN
+F 4 "https://www.digikey.com/en/products/detail/microchip-technology/MCP3008-I-P/319422" H 12550 13550 50  0001 C CNN "Part"
+	1    12550 13550
+	1    0    0    -1  
+$EndComp
+Text GLabel 12450 14150 3    50   Input ~ 0
+PI_GND
+Wire Wire Line
+	12450 14150 12750 14150
+Text GLabel 12450 13050 1    50   Input ~ 0
+PI_3V3
+Wire Wire Line
+	12450 13050 12750 13050
+Text GLabel 11950 13250 0    50   Input ~ 0
+MISC_ADC_CH0
+Text GLabel 11950 13350 0    50   Input ~ 0
+MISC_ADC_CH1
+Text GLabel 11950 13450 0    50   Input ~ 0
+MISC_ADC_CH2
+Text GLabel 11950 13550 0    50   Input ~ 0
+MISC_ADC_CH3
+Text GLabel 11950 13650 0    50   Input ~ 0
+MISC_ADC_CH4
+Text GLabel 11950 13750 0    50   Input ~ 0
+MISC_ADC_CH5
+Text GLabel 11950 13850 0    50   Input ~ 0
+MISC_ADC_CH6
+Text GLabel 13150 13450 2    50   Input ~ 0
+PI_SCLK
+Text GLabel 13150 13550 2    50   Input ~ 0
+MISC_ADC_OUT
+Text GLabel 13150 13650 2    50   Input ~ 0
+PI_MOSI
+Text GLabel 13150 13750 2    50   Input ~ 0
+PI_CE0
+NoConn ~ 11950 13950
+Text GLabel 9450 9350 2    50   Input ~ 0
+MISC_ADC_OUT
+$Comp
+L Device:C C?
+U 1 1 6116A3B9
+P 4500 9500
+F 0 "C?" H 4615 9546 50  0000 L CNN
+F 1 "2000uF" H 4615 9455 50  0000 L CNN
+F 2 "" H 4538 9350 50  0001 C CNN
+F 3 "~" H 4500 9500 50  0001 C CNN
+	1    4500 9500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 6116A3C0
+P 1450 9300
+F 0 "J?" H 1530 9292 50  0000 L CNN
+F 1 "Line_In" H 1530 9201 50  0000 L CNN
+F 2 "digikey-footprints:Term_Block_1x2_P5.08MM" H 1450 9300 50  0001 C CNN
+F 3 "https://www.we-online.de/katalog/datasheet/691137710002.pdf" H 1450 9300 50  0001 C CNN
+F 4 "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/691137710002/6644051" H 1450 9300 50  0001 C CNN "Part"
+	1    1450 9300
+	-1   0    0    -1  
+$EndComp
+Connection ~ 4500 9350
+$Comp
+L Device:R R?
+U 1 1 6116A3CD
+P 5000 9500
+F 0 "R?" H 4930 9454 50  0000 R CNN
+F 1 "60K" H 4930 9545 50  0000 R CNN
+F 2 "" V 4930 9500 50  0001 C CNN
+F 3 "~" H 5000 9500 50  0001 C CNN
+	1    5000 9500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4500 9350 5000 9350
+Wire Wire Line
+	4500 9650 5000 9650
+Wire Wire Line
+	4500 10000 4500 9650
+Connection ~ 4500 9650
+$Comp
+L Device:R R?
+U 1 1 6116A3E9
+P 4100 10000
+F 0 "R?" V 3893 10000 50  0000 C CNN
+F 1 "115" V 3984 10000 50  0000 C CNN
+F 2 "" V 4030 10000 50  0001 C CNN
+F 3 "~" H 4100 10000 50  0001 C CNN
+	1    4100 10000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6116A3F9
+P 4100 9350
+F 0 "R?" V 3893 9350 50  0000 C CNN
+F 1 "250" V 3984 9350 50  0000 C CNN
+F 2 "" V 4030 9350 50  0001 C CNN
+F 3 "~" H 4100 9350 50  0001 C CNN
+	1    4100 9350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4250 9350 4500 9350
+Wire Wire Line
+	4250 10000 4500 10000
+Text GLabel 5900 9600 2    50   Input ~ 0
+MISC_ADC_CH0
+Text GLabel 5900 9400 2    50   Input ~ 0
+PI_GND
+$Comp
+L Isolator:LTV-817 U?
+U 1 1 6116A404
+P 5600 9500
+F 0 "U?" H 5600 9183 50  0000 C CNN
+F 1 "OPTO" H 5600 9274 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 5400 9300 50  0001 L CIN
+F 3 "http://www.us.liteon.com/downloads/LTV-817-827-847.PDF" H 5600 9400 50  0001 L CNN
+F 4 "https://www.digikey.com/en/products/detail/lite-on-inc/LTV-817/385836" H 5600 9500 50  0001 C CNN "Part"
+	1    5600 9500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 9350 5300 9350
+Wire Wire Line
+	5300 9350 5300 9400
+Connection ~ 5000 9350
+Wire Wire Line
+	5000 9650 5300 9650
+Wire Wire Line
+	5300 9650 5300 9600
+Connection ~ 5000 9650
+$Comp
+L Device:Transformer_1P_1S T?
+U 1 1 6116FC74
+P 2250 9350
+F 0 "T?" H 2250 9731 50  0000 C CNN
+F 1 "115V - 6V" H 2250 9640 50  0000 C CNN
+F 2 "" H 2250 9350 50  0001 C CNN
+F 3 "https://www.zettlermagnetics.com/pdfs/EI30_06.pdf" H 2250 9350 50  0001 C CNN
+F 4 "https://www.digikey.com/en/products/detail/zettler-magnetics/BV301S06006-ZU/12093244" H 2250 9350 50  0001 C CNN "Part"
+	1    2250 9350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 9300 1850 9300
+Wire Wire Line
+	1850 9300 1850 9150
+Wire Wire Line
+	1650 9400 1850 9400
+Wire Wire Line
+	1850 9400 1850 9550
+Wire Wire Line
+	2650 9150 2800 9150
+Wire Wire Line
+	2650 9550 2800 9550
+$Comp
+L dk_Diodes-Bridge-Rectifiers:DF04M D?
+U 1 1 6116A3DF
+P 3350 9350
+F 0 "D?" H 3550 9800 60  0000 L CNN
+F 1 "240V" H 3500 9700 60  0000 L CNN
+F 2 "digikey-footprints:DIP-4_W7.62mm" H 3550 9550 60  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/DF10M-D.pdf" H 3550 9650 60  0001 L CNN
+F 4 "DF04M-ND" H 3550 9750 60  0001 L CNN "Digi-Key_PN"
+F 5 "DF04M" H 3550 9850 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 3550 9950 60  0001 L CNN "Category"
+F 7 "Diodes - Bridge Rectifiers" H 3550 10050 60  0001 L CNN "Family"
+F 8 "https://www.onsemi.com/pub/Collateral/DF10M-D.pdf" H 3550 10150 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/DF04M/DF04M-ND/965265" H 3550 10250 60  0001 L CNN "DK_Detail_Page"
+F 10 "BRIDGE RECT 1P 400V 1.5A 4DIP" H 3550 10350 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 3550 10450 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 3550 10550 60  0001 L CNN "Status"
+F 13 "https://www.digikey.com/en/products/detail/on-semiconductor/DF04M/965265" H 3350 9350 50  0001 C CNN "Part"
+	1    3350 9350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 9150 2800 8950
+Wire Wire Line
+	2800 8950 3350 8950
+Wire Wire Line
+	2800 9550 2800 9750
+Wire Wire Line
+	2800 9750 3350 9750
+Wire Wire Line
+	3750 9350 3950 9350
+Wire Wire Line
+	2950 9350 2950 10000
+Wire Wire Line
+	2950 10000 3950 10000
 $EndSCHEMATC
